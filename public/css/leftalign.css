@@ -1,0 +1,34 @@
+/* DEBUG */ body { outline: 3px solid red !important; }
+
+/* DEBUG: uncomment to confirm CSS loads */
+/* body { outline: 3px solid red !important; } */
+
+/* 1) Left-align everything inside the homepage's main content area */
+body.home main,
+body.home main * {
+  text-align: left !important;
+}
+
+/* 2) If a container is centered via auto margins, anchor it left */
+body.home .container,
+body.home .content,
+body.home .prose,
+body.home .hero,
+body.home .hero-body {
+  margin-left: 0 !important;
+  margin-right: auto !important;
+  /* Optional: widen if you still feel it's narrow */
+  /* max-width: 1200px !important; */
+}
+
+/* 3) Kill common "center" utility classes on the homepage */
+body.home .text-center,
+body.home .has-text-centered {
+  text-align: left !important;
+}
+
+/* 4) If the layout has action buttons under the header, left them too */
+body.home .actions {
+  justify-content: flex-start !important;
+}
+/* DEBUG */ body { outline: 3px solid red !important; }
