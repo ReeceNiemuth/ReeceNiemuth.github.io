@@ -25,9 +25,6 @@ jobs:
         with:
           hugo-version: 'latest'
           extended: true
-      - name: Install Node deps (if present)
-        if: hashFiles('**/package-lock.json') != ''
-        run: npm ci
       - name: Build
         run: hugo --minify
       - name: Upload artifact
