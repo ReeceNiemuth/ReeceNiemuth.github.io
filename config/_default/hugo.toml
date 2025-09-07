@@ -4,7 +4,7 @@
 
 title = "Reece Niemuth"
 theme = "blowfish" # UNCOMMENT THIS LINE
-# baseURL = "https://reeceniemuth.com/"
+baseURL = "https://reeceniemuth.com/"
 canonifyURLs = true
 defaultContentLanguage = "en"
 
