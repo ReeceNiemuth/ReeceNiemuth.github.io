@@ -106,13 +106,13 @@ params:
     button:
       enable: true
       name: "Download Resume"
-      url: "/files/Reece_Niemuth_Resume.pdf"
+      url: "/files/Resume_Reece_Niemuth.pdf"
       download: true
       newPage: false
     socialLinks:
       customIcons:
         - icon: /images/linkedin.png
-          url: https://www.linkedin.com/in/reece-niemuth-mba-cissp-ccsp-54a87419a/
+          url: https://www.linkedin.com/in/reeceniemuth/
           name: "LinkedIn"
         - icon: /images/github.png
           url: https://github.com/ReeceNiemuth
