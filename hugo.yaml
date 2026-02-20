@@ -1,0 +1,403 @@
+baseURL: "https://reeceniemuth.com/"
+languageCode: "en-us"
+title: "Reece Niemuth"
+theme: hugo-profile
+
+outputs:
+  home:
+    - "HTML"
+    - "RSS"
+    - "JSON"
+  page:
+    - "HTML"
+    - "RSS"
+
+enableRobotsTXT: true
+
+pagination:
+  pagerSize: 10
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+Menus:
+  main:
+    - identifier: about
+      name: About
+      title: About Me
+      url: /#about
+      weight: 1
+    - identifier: experience
+      name: Experience
+      title: Work Experience
+      url: /#experience
+      weight: 2
+    - identifier: projects
+      name: Projects
+      title: My Projects
+      url: /#projects
+      weight: 3
+    - identifier: certifications
+      name: Certifications
+      title: My Certifications
+      url: /#achievements
+      weight: 4
+    - identifier: contact
+      name: Contact
+      title: Get in Touch
+      url: /#contact
+      weight: 5
+
+params:
+  title: "Reece Niemuth"
+  description: "Technical ISSO | Cybersecurity Engineer | DoD RMF & JSIG Specialist"
+  favicon: "/favicon.ico"
+  useBootstrapCDN: false
+  mathjax: false
+  animate: true
+
+  theme:
+    defaultTheme: "dark"
+
+  font:
+    fontSize: 1rem
+    fontWeight: 400
+    lineHeight: 1.5
+    textAlign: left
+
+  color:
+    textColor: "#e4e6eb"
+    secondaryTextColor: "#b0b3b8"
+    textLinkColor: "#64ffda"
+    backgroundColor: "#0a192f"
+    secondaryBackgroundColor: "#112240"
+    primaryColor: "#64ffda"
+    secondaryColor: "#1d3557"
+
+  navbar:
+    align: ms-auto
+    brandName: "Reece Niemuth"
+    disableSearch: true
+    stickyNavBar:
+      enable: true
+      showOnScrollUp: true
+    enableSeparator: false
+    menus:
+      disableAbout: false
+      disableExperience: false
+      disableEducation: false
+      disableProjects: false
+      disableAchievements: false
+      disableContact: false
+
+  # Hero Section
+  hero:
+    enable: true
+    intro: "Hi, my name is"
+    title: "Reece Niemuth"
+    subtitle: "Cybersecurity Professional"
+    content: "I build and secure cloud and on-prem systems by combining security engineering, automation, and risk management to deliver scalable, defensible security architectures."
+    image: /images/profile.webp
+    bottomImage:
+      enable: false
+    roundImage: true
+    button:
+      enable: true
+      name: "Download Resume"
+      url: "/files/Resume_Reece_Niemuth.pdf"
+      download: true
+      newPage: false
+    socialLinks:
+      customIcons:
+        - icon: /images/linkedin.png
+          url: https://www.linkedin.com/in/reeceniemuth/
+          name: "LinkedIn"
+        - icon: /images/github.png
+          url: https://github.com/ReeceNiemuth
+          name: "GitHub"
+        - icon: /images/credly.png
+          url: https://www.credly.com/users/reece-niemuth
+          name: "Credly"
+
+  # About Section
+  about:
+    enable: true
+    title: "About Me"
+    image: "/images/profile.webp"
+    content: |-
+      I've been a computer nerd my whole life. Started tinkering with old tower PCs in my grandfather's garage, built gaming rigs with friends, got into robotics and electronics in high school. After serving in the Marine Corps as an engineer focused on electronics, I discovered cybersecurity through all the "cyber warfare" talk happening in the military. It clicked immediately: a field that combined my love for technology, protecting critical systems, and the constant hunt for better tools and solutions.
+
+      Now I work as a **Technical Information System Security Officer (ISSO)** and hybrid cybersecurity professional, specializing in **DoD RMF, JSIG, NIST SP 800-53, and STIGs** across SAP and classified environments. I blend risk management and compliance with hands-on engineering, building automation, dashboards, and security tooling using Python, PowerShell, Bash, Splunk, Nessus, SCAP, and OpenSCAP. My goal is to translate dense security requirements into practical, code-driven solutions that actually make people's lives easier.
+
+      What gets me out of bed is hearing someone say, *"This is great, this will save us so much time."* I love the relentless pace of this field, the endless stack of knowledge to master, and the challenge of staying ahead of the next big tool or threat. Right now, I'm pursuing my **Doctorate in Cybersecurity Analytics** while building passion projects in AI-assisted security tooling and federal compliance automation.
+
+      When I'm not working, I'm in my homelab running the "Patriot Command Operations System (PCOS)" — a fully documented environment where I practice the entire system lifecycle per NIST and RMF without risking production systems.
+    skills:
+      enable: true
+      title: "Core Competencies:"
+      items:
+        - "RMF"
+        - "NIST 800-53"
+        - "JSIG"
+        - "STIG"
+        - "AWS Security"
+        - "Python"
+        - "PowerShell"
+        - "Bash"
+        - "Splunk"
+        - "Nessus"
+        - "SCAP"
+        - "OpenSCAP"
+        - "Linux"
+        - "Automation"
+
+  # Experience Section
+  experience:
+    enable: true
+    title: "Professional Experience"
+    items:
+      - company: "Lockheed Martin"
+        companyUrl: "https://www.lockheedmartin.com"
+        jobs:
+          - name: "Information Systems Security Officer II (Technical)"
+            date: "2025 - Present"
+            content: |
+              Serve as the technical ISSO for Special Access Program (SAP) and collateral systems, enforcing NIST RMF and JSIG requirements through continuous monitoring, STIG engineering, vulnerability remediation, and ATO sustainment.
+
+              - Lead security control design and implementation
+              - Cross-domain security engineering coordination
+              - Automated compliance visibility using Splunk, SCAP/STIG tooling, and Nessus
+              - Maintain defensible system architectures
+
+      - company: "Amazon Web Services"
+        companyUrl: "https://aws.amazon.com"
+        jobs:
+          - name: "Trust & Safety / Cloud Information Security"
+            date: "2023 - 2025"
+            content: |
+              Led GRC-focused security operations for AWS cloud resources (EC2, ELB, Lambda, CloudFront, S3), proactively investigating, sandboxing, and mitigating malicious activity.
+
+              - Resolved or contributed to 10,000+ cloud security incidents
+              - Investigated intrusion attempts, phishing, botnet C2, and content-based abuse
+              - Customer-facing cybersecurity consulting and secure architecture guidance
+              - Resource hardening and recovery support for compromised environments
+
+      - company: "Voxai Solutions Inc."
+        companyUrl: "#"
+        jobs:
+          - name: "Network Operations Center (NOC) Technician"
+            date: "2022 - 2023"
+            content: |
+              Supported on-premises network administration for Public Trust-cleared contract customers (including USPS) and cloud-based contact center environments built on Genesys Cloud CX.
+
+              - Monitoring, incident response, and systems administration across hybrid environments
+              - Developed and maintained cloud IVR call flows and routing logic
+              - Contributed to service automation and platform reliability
+
+      - company: "United States Marine Corps"
+        companyUrl: "https://www.marines.mil"
+        jobs:
+          - name: "Utilities Engineer"
+            date: "2018 - 2022"
+            content: |
+              Supported mission-critical infrastructure and power systems for secure communications and digital operations in domestic and international environments.
+
+              - Electronic troubleshooting, preventive maintenance, and fault isolation
+              - Led Marines while ensuring system availability and operational security
+              - Maintained resilience of critical infrastructure under strict procedures
+
+  # Education Section
+  education:
+    enable: true
+    title: "Education"
+    index: false
+    items:
+      - title: "Doctor of Engineering (D.Eng.) in Cybersecurity Analytics"
+        school:
+          name: "George Washington University"
+          url: "https://www.gwu.edu"
+          logo: "/images/schools/gwu.png"
+        date: "Expected December 2027"
+        content: |-
+          Conducting original, applied research on business-impacting cybersecurity problems, with emphasis on automation and AI/ML-enabled security products, federal compliance optimization, and modernizing outdated practices across secure, classified, and national security environments.
+      - title: "Master of Business Administration (MBA), IT Management"
+        school:
+          name: "Western Governors University"
+          url: "https://www.wgu.edu"
+          logo: "/images/schools/wgu.png"
+        date: ""
+        content: |-
+          Focused on enterprise IT operations, governance, and executive decision-making, strengthening business acumen and strategic leadership to complement military leadership experience.
+      - title: "Bachelor of Science (B.S.), Cybersecurity and Information Assurance"
+        school:
+          name: "Western Governors University"
+          url: "https://www.wgu.edu"
+          logo: "/images/schools/wgu.png"
+        date: ""
+        content: |-
+          Broad, hands-on curriculum spanning AI/ML concepts, data analytics, cloud security, networking, digital forensics, penetration testing, and CTF-based adversarial thinking.
+      - title: "Undergraduate Coursework, Computer Science"
+        school:
+          name: "Texas Christian University"
+          url: "https://www.tcu.edu"
+          logo: "/images/schools/tcu.png"
+        date: ""
+        content: |-
+          Completed two years of CS coursework including assembly-level programming, data structures, and Java, building a strong foundation in low-level systems and algorithms.
+
+  # Achievements/Certifications Section
+  achievements:
+    enable: true
+    title: "Certifications"
+    items:
+      - title: "CISSP-ISSEP"
+        content: "Information Systems Security Engineering Professional - (ISC)2"
+        url: "https://www.credly.com/users/reece-niemuth"
+        image: "/images/certs/isc2.png"
+      - title: "CISSP"
+        content: "Certified Information Systems Security Professional - (ISC)2"
+        url: "https://www.credly.com/users/reece-niemuth"
+        image: "/images/certs/isc2.png"
+      - title: "CCSP"
+        content: "Certified Cloud Security Professional - (ISC)2"
+        url: "https://www.credly.com/users/reece-niemuth"
+        image: "/images/certs/isc2.png"
+      - title: "SSCP"
+        content: "Systems Security Certified Practitioner - (ISC)2"
+        url: "https://www.credly.com/users/reece-niemuth"
+        image: "/images/certs/isc2.png"
+      - title: "CompTIA SecurityX"
+        content: "Advanced Security Practitioner (formerly CASP+)"
+        url: "https://www.credly.com/users/reece-niemuth"
+        image: "/images/certs/comptia.png"
+      - title: "CompTIA PenTest+"
+        content: "Penetration Testing Certification"
+        url: "https://www.credly.com/users/reece-niemuth"
+        image: "/images/certs/comptia.png"
+      - title: "CompTIA CySA+"
+        content: "Cybersecurity Analyst Certification"
+        url: "https://www.credly.com/users/reece-niemuth"
+        image: "/images/certs/comptia.png"
+      - title: "CompTIA Security+"
+        content: "Core Cybersecurity Certification"
+        url: "https://www.credly.com/users/reece-niemuth"
+        image: "/images/certs/comptia.png"
+      - title: "CompTIA Network+"
+        content: "Networking Concepts and Operations"
+        url: "https://www.credly.com/users/reece-niemuth"
+        image: "/images/certs/comptia.png"
+      - title: "CompTIA A+"
+        content: "IT Fundamentals & Technical Support"
+        url: "https://www.credly.com/users/reece-niemuth"
+        image: "/images/certs/comptia.png"
+      - title: "CompTIA Project+"
+        content: "IT Project Management Certification"
+        url: "https://www.credly.com/users/reece-niemuth"
+        image: "/images/certs/comptia.png"
+      - title: "ITIL 4 Foundation"
+        content: "IT Infrastructure Library v4 - AXELOS"
+        url: "https://www.credly.com/users/reece-niemuth"
+        image: "/images/certs/axelos.png"
+      - title: "Genesys Cloud Professional"
+        content: "Genesys Cloud CX Platform Certification"
+        url: "https://www.credly.com/users/reece-niemuth"
+        image: "/images/certs/genesys.png"
+      - title: "Linux Essentials"
+        content: "Linux Fundamentals - LPI"
+        url: "https://www.credly.com/users/reece-niemuth"
+        image: "/images/certs/lpi.png"
+
+  # Projects Section
+  projects:
+    enable: true
+    title: "Projects"
+    items:
+      - title: "Cyber Knowledge Share (CKS)"
+        content: "Enterprise cybersecurity knowledgebase supporting ISSOs, ISSMs, IT staff, and leadership with authoritative, workflow-aligned guidance across governance, RMF, STIGs, IR, and continuous monitoring. Includes the ISSO Knowledge Assistant, a RAG-based AI system using Meta Llama 3.3 (70B) constrained to approved policy sources."
+        image: /images/projects/cks.png
+        badges:
+          - "Knowledge Management"
+          - "RAG/AI"
+          - "RMF"
+          - "NIST"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/ReeceNiemuth
+
+      - title: "Patriot Command Operations System (PCOS)"
+        content: "Self-hosted, multi-system homelab enclave emulating a federal information system with realistic security boundaries, logging, vulnerability management, and lifecycle controls. Full NIST RMF lifecycle with complete documentation including SSPs, SARs, RARs, POA&Ms, and STIG/SCAP reports."
+        image: /images/projects/pcos.png
+        badges:
+          - "Homelab"
+          - "RMF"
+          - "NIST 800-37"
+          - "STIG"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/ReeceNiemuth
+
+      - title: "Bastion Insight Engine (BIE)"
+        content: "Centralized compliance automation platform modernizing fragmented federal cybersecurity workflows across RMF, STIGs, vulnerability management, and audit preparation. Features normalized evidence ingestion, explainable risk modeling, and continuous audit policy verification."
+        image: /images/projects/bie.png
+        badges:
+          - "Compliance Automation"
+          - "In Progress"
+          - "Python"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/ReeceNiemuth
+
+      - title: "AI Consensus"
+        content: "Multi-model AI interface that queries multiple LLMs in parallel and synthesizes consensus answers through structured comparison and voting. Identifies strongest core responses and valuable enrichments to reduce single-model bias and improve reasoning quality."
+        image: /images/projects/ai-consensus.png
+        badges:
+          - "AI/ML"
+          - "Multi-Model"
+          - "Decision Support"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/ReeceNiemuth
+
+  # Contact Section
+  contact:
+    enable: true
+    title: "Get In Touch"
+    content: "Feel free to reach out! Whether you have a question about cybersecurity, want to collaborate on a project, or just want to connect."
+    btnName: "Email Me"
+    btnLink: "mailto:reeceniemuth@gmail.com"
+
+  footer:
+    recentPosts:
+      path: "blogs"
+      count: 3
+      title: Recent Posts
+      enable: false
+      disableFeaturedImage: false
+    socialNetworks:
+      github: https://github.com/ReeceNiemuth
+      linkedin: https://www.linkedin.com/in/reece-niemuth-mba-cissp-ccsp-54a87419a/
+
+  listPages:
+    disableFeaturedImage: false
+
+  singlePages:
+    socialShare: true
+    readTime:
+      enable: true
+      content: "min read"
+    scrollprogress:
+      enable: true
+
+  terms:
+    read: "Read"
+    toc: "Table Of Contents"
+    copyright: "All rights reserved"
+    pageNotFound: "Page not found"
+    emailText: "Check out this site"
+
+  datesFormat:
+    article: "Jan 2, 2006"
+    articleList: "Jan 2, 2006"
+    articleRecent: "Jan 2, 2006"

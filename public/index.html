@@ -1,0 +1,1490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta name="generator" content="Hugo 0.149.1"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta http-equiv="Accept-CH" content="DPR, Viewport-Width, Width">
+<link rel="icon" href=/favicon.ico type="image/gif">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+>
+<link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      media="print" onload="this.media='all'" />
+<noscript>
+  <link
+          href="https://fonts.googleapis.com/css2?family=Alata&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+          rel="stylesheet">
+</noscript>
+
+
+<link rel="stylesheet" href="/css/font.css" media="all">
+
+
+
+<meta property="og:url" content="http://localhost:1313/">
+  <meta property="og:site_name" content="Reece Niemuth">
+  <meta property="og:title" content="Reece Niemuth">
+  <meta property="og:description" content="Technical ISSO | Cybersecurity Engineer | DoD RMF &amp; JSIG Specialist">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="website">
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Reece Niemuth">
+  <meta name="twitter:description" content="Technical ISSO | Cybersecurity Engineer | DoD RMF &amp; JSIG Specialist">
+
+
+<link rel="stylesheet" href="/bootstrap-5/css/bootstrap.min.css" media="all"><link rel="stylesheet" href="/css/header.css" media="all">
+<link rel="stylesheet" href="/css/footer.css" media="all">
+
+
+<link rel="stylesheet" href="/css/theme.css" media="all">
+
+<style>
+    :root {
+        --text-color: #e4e6eb;
+        --text-secondary-color: #b0b3b8;
+        --text-link-color: #64ffda;
+        --background-color: #0a192f;
+        --secondary-background-color: #112240;
+        --primary-color: #64ffda;
+        --secondary-color: #1d3557;
+
+         
+        --text-color-dark: #e4e6eb;
+        --text-secondary-color-dark: #b0b3b8;
+        --text-link-color-dark: #ffffff;
+        --background-color-dark: #18191a;
+        --secondary-background-color-dark: #212529;
+        --primary-color-dark: #ffffff;
+        --secondary-color-dark: #212529;
+    }
+    body {
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        text-align: left;
+    }
+
+    html {
+        background-color: var(--background-color) !important;
+    }
+
+    body::-webkit-scrollbar {
+        height: 0px;
+        width: 8px;
+        background-color: var(--background-color);
+    }
+
+    ::-webkit-scrollbar-track {
+        border-radius: 1rem;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        border-radius: 1rem;
+        background: #b0b0b0;
+        outline: 1px solid var(--background-color);
+    }
+
+    #search-content::-webkit-scrollbar {
+        width: .5em;
+        height: .1em;
+        background-color: var(--background-color);
+    }
+</style>
+
+
+<style>
+    body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        z-index: -1;
+        background-image: url('/images/circuit-pattern.svg');
+        background-repeat: repeat;
+        background-size: 200px 200px;
+        opacity: 0.6;
+    }
+</style>
+
+
+<meta name="description" content=Technical&#32;ISSO&#32;|&#32;Cybersecurity&#32;Engineer&#32;|&#32;DoD&#32;RMF&#32;&amp;&#32;JSIG&#32;Specialist>
+<link rel="stylesheet" href="/css/index.css" media="all">
+<link rel="stylesheet" href="/css/projects.css" media="all">
+
+
+<script defer src="/fontawesome-6/all-6.4.2.js"></script>
+
+
+  
+  
+
+  <title>
+Reece Niemuth
+
+  </title>
+</head>
+
+<body class="light">
+  
+  
+<script>
+    let localStorageValue = localStorage.getItem("pref-theme");
+    let mediaQuery = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+    switch (localStorageValue) {
+        case "dark":
+            document.documentElement.classList.add('dark');
+            document.body.classList.add('dark');
+            break;
+        case "light":
+            document.body.classList.remove('dark');
+            document.documentElement.classList.remove('dark');
+            break;
+        default:
+            if (mediaQuery) {
+                document.documentElement.classList.add('dark');
+                document.body.classList.add('dark');
+            }
+            break;
+    }
+</script>
+
+
+
+
+<script>
+    var prevScrollPos = window.pageYOffset;
+    window.addEventListener("scroll", function showHeaderOnScroll() {
+        let profileHeaderElem = document.getElementById("profileHeader");
+        let currentScrollPos = window.pageYOffset;
+        let resetHeaderStyle = false;
+        let showNavBarOnScrollUp =  true ;
+        let showNavBar = showNavBarOnScrollUp ? prevScrollPos > currentScrollPos : currentScrollPos > 0;
+        if (showNavBar) {
+            profileHeaderElem.classList.add("showHeaderOnTop");
+        } else {
+            resetHeaderStyle = true;
+        }
+        if(currentScrollPos === 0) {
+            resetHeaderStyle = true;
+        }
+        if(resetHeaderStyle) {
+            profileHeaderElem.classList.remove("showHeaderOnTop");
+        }
+        prevScrollPos = currentScrollPos;
+    });
+</script>
+
+
+
+<header id="profileHeader">
+    <nav class="pt-3 navbar navbar-expand-lg animate">
+        <div class="container-fluid mx-xs-2 mx-sm-5 mx-md-5 mx-lg-5">
+            
+            <a class="navbar-brand primary-font text-wrap" href="/">
+                
+                <img src="/favicon.ico" width="30" height="30"
+                    class="d-inline-block align-top">
+                Reece Niemuth
+                
+            </a>
+
+            
+
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <svg aria-hidden="true" height="24" viewBox="0 0 16 16" version="1.1" width="24" data-view-component="true">
+                    <path fill-rule="evenodd" d="M1 2.75A.75.75 0 011.75 2h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 2.75zm0 5A.75.75 0 011.75 7h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 7.75zM1.75 12a.75.75 0 100 1.5h12.5a.75.75 0 100-1.5H1.75z"></path>
+                </svg>
+            </button>
+
+            
+            <div class="collapse navbar-collapse text-wrap primary-font" id="navbarContent">
+                <ul class="navbar-nav ms-auto text-center">
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#about" aria-label="about">
+                            About Me
+                        </a>
+                    </li>
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#experience"
+                            aria-label="experience">
+                            Professional Experience
+                        </a>
+                    </li>
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#education"
+                            aria-label="education">
+                            Education
+                        </a>
+                    </li>
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#projects"
+                            aria-label="projects">
+                            Projects
+                        </a>
+                    </li>
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#achievements"
+                            aria-label="achievements">
+                            Certifications
+                        </a>
+                    </li>
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#contact"
+                            aria-label="contact">
+                            Get In Touch
+                        </a>
+                    </li>
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                    
+                    <li class="nav-item navbar-text">
+                        
+                        <div class="text-center">
+                            <button id="theme-toggle">
+                                <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                                </svg>
+                                <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="5"></circle>
+                                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                                </svg>
+                            </button>
+                        </div>
+                    </li>
+                    
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+</header>
+<div id="content">
+<section id="hero" class="py-5 align-middle">
+    <div class="container px-3 px-sm-5 px-md-5 px-lg-5 pt-lg-3">
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-8 content animate" id="primary-font">
+                <span class="subtitle">
+                    Hi, my name is
+                </span>
+                <h1>
+                    Reece Niemuth
+                </h1>
+                <h2>
+                    Cybersecurity Professional
+                </h2>
+                <p class="hero-content">
+                    I build and secure cloud and on-prem systems by combining security engineering, automation, and risk management to deliver scalable, defensible security architectures.
+                </p>
+                <div class="row">
+                    <div class="col-auto h-100">
+                        
+                        <a href="/files/Reece_Niemuth_Resume.pdf" class="btn" download
+                        class="btn d-inline-flex align-items-center justify-content-center"
+                        style="border: 2px solid var(--text-color); border-radius: 0.75rem; padding: 0.5rem 1.25rem; background: transparent; color: var(--text-color);"
+			  >             
+                            Download Resume
+                        </a>
+                        
+                    </div>
+                    <div class="col-auto px-0 h-100"><div class="d-flex flex-wrap align-items-center" style="gap: 8px;">
+    
+    <a href="https://www.linkedin.com/in/reece-niemuth-mba-cissp-ccsp-54a87419a/"
+         target="_blank" 
+        class="btn d-inline-flex align-items-center justify-content-center"
+        style="border: 2px solid var(--text-color); border-radius: 0.75rem; padding: 0.5rem 1.25rem; background: transparent; color: var(--text-color);"
+    >
+        <img src="/images/linkedin.png" style="width: 18px; height: 18px; margin-right: 8px; background: transparent;">
+        <span>LinkedIn</span>
+    </a>
+    
+    <a href="https://github.com/ReeceNiemuth"
+         target="_blank" 
+        class="btn d-inline-flex align-items-center justify-content-center"
+        style="border: 2px solid var(--text-color); border-radius: 0.75rem; padding: 0.5rem 1.25rem; background: transparent; color: var(--text-color);"
+    >
+        <img src="/images/github.png" style="width: 18px; height: 18px; margin-right: 8px; background: transparent; filter: invert(1);">
+        <span>GitHub</span>
+    </a>
+    
+    <a href="https://www.credly.com/users/reece-niemuth"
+         target="_blank" 
+        class="btn d-inline-flex align-items-center justify-content-center"
+        style="border: 2px solid var(--text-color); border-radius: 0.75rem; padding: 0.5rem 1.25rem; background: transparent; color: var(--text-color);"
+    >
+        <img src="/images/credly.png" style="width: 18px; height: 18px; margin-right: 8px; background: transparent;">
+        <span>Credly</span>
+    </a>
+    
+</div>
+</div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-4">
+                <div class="row justify-content-center">
+                    <div class="col-sm-12 col-md-9 pt-5 image animate px-5 px-md-5 px-lg-0 text-center">
+                        <img src="/images/profile.webp"
+                            class="img-thumbnail mx-auto rounded-circle"
+                            alt=""
+                        >
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</section>
+
+<section id="about" class="py-0 py-sm-5">
+    <div class="container bg-transparent">
+        <h3 class="text-center bg-transparent">About Me</h3>
+        <div class="bg-transparent row justify-content-center px-3 py-5">
+            
+            <div class="col-sm-12 col-md-8 col-lg-4 mb-5 mb-sm-0 mb-md-5 mb-lg-0 d-none d-sm-none d-md-block">
+                <div class="image d-flex px-5">
+                    <img src="/images/profile.webp" class="img-thumbnail mx-auto rounded-circle" alt="">
+                </div>
+            </div>
+            
+            <div class="col-sm-12 col-md-12 col-lg-8 content">
+                <p>I&rsquo;ve been a computer nerd my whole life. Started tinkering with old tower PCs in my grandfather&rsquo;s garage, built gaming rigs with friends, got into robotics and electronics in high school. After serving in the Marine Corps as an engineer focused on electronics, I discovered cybersecurity through all the &ldquo;cyber warfare&rdquo; talk happening in the military. It clicked immediately: a field that combined my love for technology, protecting critical systems, and the constant hunt for better tools and solutions.</p>
+<p>Now I work as a <strong>Technical Information System Security Officer (ISSO)</strong> and hybrid cybersecurity professional, specializing in <strong>DoD RMF, JSIG, NIST SP 800-53, and STIGs</strong> across SAP and classified environments. I blend risk management and compliance with hands-on engineering, building automation, dashboards, and security tooling using Python, PowerShell, Bash, Splunk, Nessus, SCAP, and OpenSCAP. My goal is to translate dense security requirements into practical, code-driven solutions that actually make people&rsquo;s lives easier.</p>
+<p>What gets me out of bed is hearing someone say, <em>&ldquo;This is great, this will save us so much time.&rdquo;</em> I love the relentless pace of this field, the endless stack of knowledge to master, and the challenge of staying ahead of the next big tool or threat. Right now, I&rsquo;m pursuing my <strong>Doctorate in Cybersecurity Analytics</strong> while building passion projects in AI-assisted security tooling and federal compliance automation.</p>
+<p>When I&rsquo;m not working, I&rsquo;m in my homelab running the &ldquo;Patriot Command Operations System (PCOS)&rdquo; — a fully documented environment where I practice the entire system lifecycle per NIST and RMF without risking production systems.</p>
+
+
+                
+                Core Competencies:
+                <ul>
+                    
+                    <li>RMF</li>
+                    
+                    <li>NIST 800-53</li>
+                    
+                    <li>JSIG</li>
+                    
+                    <li>STIG</li>
+                    
+                    <li>AWS Security</li>
+                    
+                    <li>Python</li>
+                    
+                    <li>PowerShell</li>
+                    
+                    <li>Bash</li>
+                    
+                    <li>Splunk</li>
+                    
+                    <li>Nessus</li>
+                    
+                    <li>SCAP</li>
+                    
+                    <li>OpenSCAP</li>
+                    
+                    <li>Linux</li>
+                    
+                    <li>Automation</li>
+                    
+                </ul>
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="experience" class="py-5">
+    <div class="container">
+        <h3 class="text-center">Professional Experience</h3>
+        <div class="row justify-content-center">
+            <div class="col-sm-12 col-md-8 col-lg-8 py-2">
+                <div class="experience-container px-3 pt-3">
+                    <ul class="nav nav-pills mb-2 bg-transparent primary-font" id="pills-tab" role="tablist">
+                        
+                            
+                            
+                                
+                            
+                            <li class="nav-item px-1 bg-transparent" role="presentation">
+                                <div
+                                    class="nav-link active bg-transparent"
+                                    aria-selected="true"
+                                    role="tab"
+                                    data-bs-toggle="pill"
+                                    id='lockheed-martin-2025-present-tab'
+                                    data-bs-target='#pills-lockheed-martin-2025-present'
+                                    aria-controls='lockheed-martin-2025-present'
+                                >
+                                    Lockheed Martin
+                                </div>
+                            </li>
+                        
+                            
+                            
+                                
+                            
+                            <li class="nav-item px-1 bg-transparent" role="presentation">
+                                <div
+                                    class="nav-link  bg-transparent"
+                                    aria-selected="true"
+                                    role="tab"
+                                    data-bs-toggle="pill"
+                                    id='amazon-web-services-2023-2025-tab'
+                                    data-bs-target='#pills-amazon-web-services-2023-2025'
+                                    aria-controls='amazon-web-services-2023-2025'
+                                >
+                                    Amazon Web Services
+                                </div>
+                            </li>
+                        
+                            
+                            
+                                
+                            
+                            <li class="nav-item px-1 bg-transparent" role="presentation">
+                                <div
+                                    class="nav-link  bg-transparent"
+                                    aria-selected="true"
+                                    role="tab"
+                                    data-bs-toggle="pill"
+                                    id='voxai-solutions-inc-2022-2023-tab'
+                                    data-bs-target='#pills-voxai-solutions-inc-2022-2023'
+                                    aria-controls='voxai-solutions-inc-2022-2023'
+                                >
+                                    Voxai Solutions Inc.
+                                </div>
+                            </li>
+                        
+                            
+                            
+                                
+                            
+                            <li class="nav-item px-1 bg-transparent" role="presentation">
+                                <div
+                                    class="nav-link  bg-transparent"
+                                    aria-selected="true"
+                                    role="tab"
+                                    data-bs-toggle="pill"
+                                    id='united-states-marine-corps-2018-2022-tab'
+                                    data-bs-target='#pills-united-states-marine-corps-2018-2022'
+                                    aria-controls='united-states-marine-corps-2018-2022'
+                                >
+                                    United States Marine Corps
+                                </div>
+                            </li>
+                        
+                    </ul>
+
+                    <div class="tab-content pb-3 bg-transparent primary-font" id="pills-tabContent">
+                        
+                            
+                            
+                            
+                            
+                                
+                            
+                            <div
+                                class="tab-pane fade bg-transparent show active"
+                                role="tabpanel"
+                                id='pills-lockheed-martin-2025-present'
+                                aria-labelledby='lockheed-martin-2025-present-tab'
+                            >
+                                
+                                    <div>
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <div>
+                                                <span class="h4">Information Systems Security Officer II (Technical)</span>
+                                                
+                                                
+                                                
+                                                
+                                                    <small>-</small>
+                                                    <a href="https://www.lockheedmartin.com" target="_blank">Lockheed Martin</a>
+                                                
+                                            </div>
+                                            <div class="d-block">
+                                                <small>2025 - Present</small>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="pb-2 pb-3">
+                                            <p>Serve as the technical ISSO for Special Access Program (SAP) and collateral systems, enforcing NIST RMF and JSIG requirements through continuous monitoring, STIG engineering, vulnerability remediation, and ATO sustainment.</p>
+<ul>
+<li>Lead security control design and implementation</li>
+<li>Cross-domain security engineering coordination</li>
+<li>Automated compliance visibility using Splunk, SCAP/STIG tooling, and Nessus</li>
+<li>Maintain defensible system architectures</li>
+</ul>
+                                        </div>
+                                    </div>
+                                
+                            </div>
+                        
+                        
+                            
+                            
+                            
+                            
+                                
+                            
+                            <div
+                                class="tab-pane fade bg-transparent "
+                                role="tabpanel"
+                                id='pills-amazon-web-services-2023-2025'
+                                aria-labelledby='amazon-web-services-2023-2025-tab'
+                            >
+                                
+                                    <div>
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <div>
+                                                <span class="h4">Trust &amp; Safety / Cloud Information Security</span>
+                                                
+                                                
+                                                
+                                                
+                                                    <small>-</small>
+                                                    <a href="https://aws.amazon.com" target="_blank">Amazon Web Services</a>
+                                                
+                                            </div>
+                                            <div class="d-block">
+                                                <small>2023 - 2025</small>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="pb-2 pb-3">
+                                            <p>Led GRC-focused security operations for AWS cloud resources (EC2, ELB, Lambda, CloudFront, S3), proactively investigating, sandboxing, and mitigating malicious activity.</p>
+<ul>
+<li>Resolved or contributed to 10,000+ cloud security incidents</li>
+<li>Investigated intrusion attempts, phishing, botnet C2, and content-based abuse</li>
+<li>Customer-facing cybersecurity consulting and secure architecture guidance</li>
+<li>Resource hardening and recovery support for compromised environments</li>
+</ul>
+                                        </div>
+                                    </div>
+                                
+                            </div>
+                        
+                        
+                            
+                            
+                            
+                            
+                                
+                            
+                            <div
+                                class="tab-pane fade bg-transparent "
+                                role="tabpanel"
+                                id='pills-voxai-solutions-inc-2022-2023'
+                                aria-labelledby='voxai-solutions-inc-2022-2023-tab'
+                            >
+                                
+                                    <div>
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <div>
+                                                <span class="h4">Network Operations Center (NOC) Technician</span>
+                                                
+                                                
+                                                
+                                                
+                                                    <small>-</small>
+                                                    <a href="#" target="_blank">Voxai Solutions Inc.</a>
+                                                
+                                            </div>
+                                            <div class="d-block">
+                                                <small>2022 - 2023</small>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="pb-2 pb-3">
+                                            <p>Supported on-premises network administration for Public Trust-cleared contract customers (including USPS) and cloud-based contact center environments built on Genesys Cloud CX.</p>
+<ul>
+<li>Monitoring, incident response, and systems administration across hybrid environments</li>
+<li>Developed and maintained cloud IVR call flows and routing logic</li>
+<li>Contributed to service automation and platform reliability</li>
+</ul>
+                                        </div>
+                                    </div>
+                                
+                            </div>
+                        
+                        
+                            
+                            
+                            
+                            
+                                
+                            
+                            <div
+                                class="tab-pane fade bg-transparent "
+                                role="tabpanel"
+                                id='pills-united-states-marine-corps-2018-2022'
+                                aria-labelledby='united-states-marine-corps-2018-2022-tab'
+                            >
+                                
+                                    <div>
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <div>
+                                                <span class="h4">Utilities Engineer</span>
+                                                
+                                                
+                                                
+                                                
+                                                    <small>-</small>
+                                                    <a href="https://www.marines.mil" target="_blank">United States Marine Corps</a>
+                                                
+                                            </div>
+                                            <div class="d-block">
+                                                <small>2018 - 2022</small>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="pb-2 pb-3">
+                                            <p>Supported mission-critical infrastructure and power systems for secure communications and digital operations in domestic and international environments.</p>
+<ul>
+<li>Electronic troubleshooting, preventive maintenance, and fault isolation</li>
+<li>Led Marines while ensuring system availability and operational security</li>
+<li>Maintained resilience of critical infrastructure under strict procedures</li>
+</ul>
+                                        </div>
+                                    </div>
+                                
+                            </div>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="education" class="py-5">
+    <div class="container">
+        <h3 class="text-center">Education</h3>
+        <div class="row justify-content-center py-5">
+            
+            
+            <div class="col-12 p-0">
+                <div class="row row align-items-center justify-content-center m-1 mb-4">
+                    
+
+                    <div class="col-md-9">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="d-flex align-items-start">
+                                    
+                                    <div class="me-3 flex-shrink-0">
+                                        <img src="/images/schools/gwu.png" alt="George Washington University" style="width: 50px; height: 50px; object-fit: contain;">
+                                    </div>
+                                    
+                                    <div class="flex-grow-1">
+                                        <div class="float-end">
+                                            <small>Expected December 2027</small>
+                                        </div>
+                                        <h5 class="card-title">Doctor of Engineering (D.Eng.) in Cybersecurity Analytics</h5>
+
+                                        
+                                        <a href="https://www.gwu.edu" target="_blank">
+                                            <h6>
+                                            George Washington University
+                                            </h6>
+                                        </a>
+                                        
+
+                                        
+                                        <div class="py-1 education-content">
+                                            Conducting original, applied research on business-impacting cybersecurity problems, with emphasis on automation and AI/ML-enabled security products, federal compliance optimization, and modernizing outdated practices across secure, classified, and national security environments.
+                                        </div>
+
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-12 p-0">
+                <div class="row row align-items-center justify-content-center m-1 mb-4">
+                    
+
+                    <div class="col-md-9">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="d-flex align-items-start">
+                                    
+                                    <div class="me-3 flex-shrink-0">
+                                        <img src="/images/schools/wgu.png" alt="Western Governors University" style="width: 50px; height: 50px; object-fit: contain;">
+                                    </div>
+                                    
+                                    <div class="flex-grow-1">
+                                        <div class="float-end">
+                                            <small></small>
+                                        </div>
+                                        <h5 class="card-title">Master of Business Administration (MBA), IT Management</h5>
+
+                                        
+                                        <a href="https://www.wgu.edu" target="_blank">
+                                            <h6>
+                                            Western Governors University
+                                            </h6>
+                                        </a>
+                                        
+
+                                        
+                                        <div class="py-1 education-content">
+                                            Focused on enterprise IT operations, governance, and executive decision-making, strengthening business acumen and strategic leadership to complement military leadership experience.
+                                        </div>
+
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-12 p-0">
+                <div class="row row align-items-center justify-content-center m-1 mb-4">
+                    
+
+                    <div class="col-md-9">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="d-flex align-items-start">
+                                    
+                                    <div class="me-3 flex-shrink-0">
+                                        <img src="/images/schools/wgu.png" alt="Western Governors University" style="width: 50px; height: 50px; object-fit: contain;">
+                                    </div>
+                                    
+                                    <div class="flex-grow-1">
+                                        <div class="float-end">
+                                            <small></small>
+                                        </div>
+                                        <h5 class="card-title">Bachelor of Science (B.S.), Cybersecurity and Information Assurance</h5>
+
+                                        
+                                        <a href="https://www.wgu.edu" target="_blank">
+                                            <h6>
+                                            Western Governors University
+                                            </h6>
+                                        </a>
+                                        
+
+                                        
+                                        <div class="py-1 education-content">
+                                            Broad, hands-on curriculum spanning AI/ML concepts, data analytics, cloud security, networking, digital forensics, penetration testing, and CTF-based adversarial thinking.
+                                        </div>
+
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-12 p-0">
+                <div class="row row align-items-center justify-content-center m-1 mb-4">
+                    
+
+                    <div class="col-md-9">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="d-flex align-items-start">
+                                    
+                                    <div class="me-3 flex-shrink-0">
+                                        <img src="/images/schools/tcu.png" alt="Texas Christian University" style="width: 50px; height: 50px; object-fit: contain;">
+                                    </div>
+                                    
+                                    <div class="flex-grow-1">
+                                        <div class="float-end">
+                                            <small></small>
+                                        </div>
+                                        <h5 class="card-title">Undergraduate Coursework, Computer Science</h5>
+
+                                        
+                                        <a href="https://www.tcu.edu" target="_blank">
+                                            <h6>
+                                            Texas Christian University
+                                            </h6>
+                                        </a>
+                                        
+
+                                        
+                                        <div class="py-1 education-content">
+                                            Completed two years of CS coursework including assembly-level programming, data structures, and Java, building a strong foundation in low-level systems and algorithms.
+                                        </div>
+
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+
+<section id="projects" class="py-5">
+    <div class="container">
+        <h3 class="text-center">Projects</h3>
+        <div class="row justify-content-center px-3 px-md-5">
+            
+            <div class="col-lg-4 col-md-6 my-3">
+                <div class="card my-3 h-100" title="Cyber Knowledge Share (CKS)">
+                    <div class="card-head">
+                        <img class="card-img-top" src="/images/projects/cks.png" alt="Cyber Knowledge Share (CKS)">
+                    </div>
+                    <div class="card-body bg-transparent p-3">
+                        <div class="pb-2 bg-transparent">
+                            
+                            <span class="badge badge-secondary">Knowledge Management</span>
+                            
+                            <span class="badge badge-secondary">RAG/AI</span>
+                            
+                            <span class="badge badge-secondary">RMF</span>
+                            
+                            <span class="badge badge-secondary">NIST</span>
+                            
+                        </div>
+                        <h5 class="card-title bg-transparent mt-1">Cyber Knowledge Share (CKS)</h5>
+                        <div class="card-text bg-transparent secondary-font">
+                            Enterprise cybersecurity knowledgebase supporting ISSOs, ISSMs, IT staff, and leadership with authoritative, workflow-aligned guidance across governance, RMF, STIGs, IR, and continuous monitoring. Includes the ISSO Knowledge Assistant, a RAG-based AI system using Meta Llama 3.3 (70B) constrained to approved policy sources.
+                        </div>
+                    </div>
+                    
+                    <div class="card-footer py-3">
+                        
+                        <span class="m-1 mx-2">
+                            <a href="https://github.com/ReeceNiemuth" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </span>
+                        
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 my-3">
+                <div class="card my-3 h-100" title="Patriot Command Operations System (PCOS)">
+                    <div class="card-head">
+                        <img class="card-img-top" src="/images/projects/pcos.png" alt="Patriot Command Operations System (PCOS)">
+                    </div>
+                    <div class="card-body bg-transparent p-3">
+                        <div class="pb-2 bg-transparent">
+                            
+                            <span class="badge badge-secondary">Homelab</span>
+                            
+                            <span class="badge badge-secondary">RMF</span>
+                            
+                            <span class="badge badge-secondary">NIST 800-37</span>
+                            
+                            <span class="badge badge-secondary">STIG</span>
+                            
+                        </div>
+                        <h5 class="card-title bg-transparent mt-1">Patriot Command Operations System (PCOS)</h5>
+                        <div class="card-text bg-transparent secondary-font">
+                            Self-hosted, multi-system homelab enclave emulating a federal information system with realistic security boundaries, logging, vulnerability management, and lifecycle controls. Full NIST RMF lifecycle with complete documentation including SSPs, SARs, RARs, POA&amp;Ms, and STIG/SCAP reports.
+                        </div>
+                    </div>
+                    
+                    <div class="card-footer py-3">
+                        
+                        <span class="m-1 mx-2">
+                            <a href="https://github.com/ReeceNiemuth" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </span>
+                        
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 my-3">
+                <div class="card my-3 h-100" title="Bastion Insight Engine (BIE)">
+                    <div class="card-head">
+                        <img class="card-img-top" src="/images/projects/bie.png" alt="Bastion Insight Engine (BIE)">
+                    </div>
+                    <div class="card-body bg-transparent p-3">
+                        <div class="pb-2 bg-transparent">
+                            
+                            <span class="badge badge-secondary">Compliance Automation</span>
+                            
+                            <span class="badge badge-secondary">In Progress</span>
+                            
+                            <span class="badge badge-secondary">Python</span>
+                            
+                        </div>
+                        <h5 class="card-title bg-transparent mt-1">Bastion Insight Engine (BIE)</h5>
+                        <div class="card-text bg-transparent secondary-font">
+                            Centralized compliance automation platform modernizing fragmented federal cybersecurity workflows across RMF, STIGs, vulnerability management, and audit preparation. Features normalized evidence ingestion, explainable risk modeling, and continuous audit policy verification.
+                        </div>
+                    </div>
+                    
+                    <div class="card-footer py-3">
+                        
+                        <span class="m-1 mx-2">
+                            <a href="https://github.com/ReeceNiemuth" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </span>
+                        
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 my-3">
+                <div class="card my-3 h-100" title="AI Consensus">
+                    <div class="card-head">
+                        <img class="card-img-top" src="/images/projects/ai-consensus.png" alt="AI Consensus">
+                    </div>
+                    <div class="card-body bg-transparent p-3">
+                        <div class="pb-2 bg-transparent">
+                            
+                            <span class="badge badge-secondary">AI/ML</span>
+                            
+                            <span class="badge badge-secondary">Multi-Model</span>
+                            
+                            <span class="badge badge-secondary">Decision Support</span>
+                            
+                        </div>
+                        <h5 class="card-title bg-transparent mt-1">AI Consensus</h5>
+                        <div class="card-text bg-transparent secondary-font">
+                            Multi-model AI interface that queries multiple LLMs in parallel and synthesizes consensus answers through structured comparison and voting. Identifies strongest core responses and valuable enrichments to reduce single-model bias and improve reasoning quality.
+                        </div>
+                    </div>
+                    
+                    <div class="card-footer py-3">
+                        
+                        <span class="m-1 mx-2">
+                            <a href="https://github.com/ReeceNiemuth" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </span>
+                        
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+</section>
+
+<section id="achievements" class="py-5">
+    <div class="container">
+        <h3 class="text-center">Certifications</h3>
+        <div class="px-0 px-md-5 px-lg-5">
+            <div class="row justify-content-center px-3 px-md-5 px-lg-5">
+                
+                
+                <div class="col-lg-4 col-md-6 my-3">
+                    <a class="card my-3 h-100 p-3" href="https://www.credly.com/users/reece-niemuth" title="CISSP-ISSEP" target="_blank">
+                        <div class="card-body bg-transparent d-flex align-items-start">
+                            
+                            <div class="me-3 flex-shrink-0">
+                                <img src="/images/certs/isc2.png" alt="CISSP-ISSEP" style="width: 40px; height: 40px; object-fit: contain;">
+                            </div>
+                            
+                            <div class="flex-grow-1">
+                                <h5 class="card-title bg-transparent mb-1">CISSP-ISSEP</h5>
+                                <div class="card-text secondary-font">
+                                    Information Systems Security Engineering Professional - (ISC)2
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                
+                
+                <div class="col-lg-4 col-md-6 my-3">
+                    <a class="card my-3 h-100 p-3" href="https://www.credly.com/users/reece-niemuth" title="CISSP" target="_blank">
+                        <div class="card-body bg-transparent d-flex align-items-start">
+                            
+                            <div class="me-3 flex-shrink-0">
+                                <img src="/images/certs/isc2.png" alt="CISSP" style="width: 40px; height: 40px; object-fit: contain;">
+                            </div>
+                            
+                            <div class="flex-grow-1">
+                                <h5 class="card-title bg-transparent mb-1">CISSP</h5>
+                                <div class="card-text secondary-font">
+                                    Certified Information Systems Security Professional - (ISC)2
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                
+                
+                <div class="col-lg-4 col-md-6 my-3">
+                    <a class="card my-3 h-100 p-3" href="https://www.credly.com/users/reece-niemuth" title="CCSP" target="_blank">
+                        <div class="card-body bg-transparent d-flex align-items-start">
+                            
+                            <div class="me-3 flex-shrink-0">
+                                <img src="/images/certs/isc2.png" alt="CCSP" style="width: 40px; height: 40px; object-fit: contain;">
+                            </div>
+                            
+                            <div class="flex-grow-1">
+                                <h5 class="card-title bg-transparent mb-1">CCSP</h5>
+                                <div class="card-text secondary-font">
+                                    Certified Cloud Security Professional - (ISC)2
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                
+                
+                <div class="col-lg-4 col-md-6 my-3">
+                    <a class="card my-3 h-100 p-3" href="https://www.credly.com/users/reece-niemuth" title="SSCP" target="_blank">
+                        <div class="card-body bg-transparent d-flex align-items-start">
+                            
+                            <div class="me-3 flex-shrink-0">
+                                <img src="/images/certs/isc2.png" alt="SSCP" style="width: 40px; height: 40px; object-fit: contain;">
+                            </div>
+                            
+                            <div class="flex-grow-1">
+                                <h5 class="card-title bg-transparent mb-1">SSCP</h5>
+                                <div class="card-text secondary-font">
+                                    Systems Security Certified Practitioner - (ISC)2
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                
+                
+                <div class="col-lg-4 col-md-6 my-3">
+                    <a class="card my-3 h-100 p-3" href="https://www.credly.com/users/reece-niemuth" title="CompTIA SecurityX" target="_blank">
+                        <div class="card-body bg-transparent d-flex align-items-start">
+                            
+                            <div class="me-3 flex-shrink-0">
+                                <img src="/images/certs/comptia.png" alt="CompTIA SecurityX" style="width: 40px; height: 40px; object-fit: contain;">
+                            </div>
+                            
+                            <div class="flex-grow-1">
+                                <h5 class="card-title bg-transparent mb-1">CompTIA SecurityX</h5>
+                                <div class="card-text secondary-font">
+                                    Advanced Security Practitioner (formerly CASP&#43;)
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                
+                
+                <div class="col-lg-4 col-md-6 my-3">
+                    <a class="card my-3 h-100 p-3" href="https://www.credly.com/users/reece-niemuth" title="CompTIA PenTest&#43;" target="_blank">
+                        <div class="card-body bg-transparent d-flex align-items-start">
+                            
+                            <div class="me-3 flex-shrink-0">
+                                <img src="/images/certs/comptia.png" alt="CompTIA PenTest&#43;" style="width: 40px; height: 40px; object-fit: contain;">
+                            </div>
+                            
+                            <div class="flex-grow-1">
+                                <h5 class="card-title bg-transparent mb-1">CompTIA PenTest&#43;</h5>
+                                <div class="card-text secondary-font">
+                                    Penetration Testing Certification
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                
+                
+                <div class="col-lg-4 col-md-6 my-3">
+                    <a class="card my-3 h-100 p-3" href="https://www.credly.com/users/reece-niemuth" title="CompTIA CySA&#43;" target="_blank">
+                        <div class="card-body bg-transparent d-flex align-items-start">
+                            
+                            <div class="me-3 flex-shrink-0">
+                                <img src="/images/certs/comptia.png" alt="CompTIA CySA&#43;" style="width: 40px; height: 40px; object-fit: contain;">
+                            </div>
+                            
+                            <div class="flex-grow-1">
+                                <h5 class="card-title bg-transparent mb-1">CompTIA CySA&#43;</h5>
+                                <div class="card-text secondary-font">
+                                    Cybersecurity Analyst Certification
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                
+                
+                <div class="col-lg-4 col-md-6 my-3">
+                    <a class="card my-3 h-100 p-3" href="https://www.credly.com/users/reece-niemuth" title="CompTIA Security&#43;" target="_blank">
+                        <div class="card-body bg-transparent d-flex align-items-start">
+                            
+                            <div class="me-3 flex-shrink-0">
+                                <img src="/images/certs/comptia.png" alt="CompTIA Security&#43;" style="width: 40px; height: 40px; object-fit: contain;">
+                            </div>
+                            
+                            <div class="flex-grow-1">
+                                <h5 class="card-title bg-transparent mb-1">CompTIA Security&#43;</h5>
+                                <div class="card-text secondary-font">
+                                    Core Cybersecurity Certification
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                
+                
+                <div class="col-lg-4 col-md-6 my-3">
+                    <a class="card my-3 h-100 p-3" href="https://www.credly.com/users/reece-niemuth" title="CompTIA Network&#43;" target="_blank">
+                        <div class="card-body bg-transparent d-flex align-items-start">
+                            
+                            <div class="me-3 flex-shrink-0">
+                                <img src="/images/certs/comptia.png" alt="CompTIA Network&#43;" style="width: 40px; height: 40px; object-fit: contain;">
+                            </div>
+                            
+                            <div class="flex-grow-1">
+                                <h5 class="card-title bg-transparent mb-1">CompTIA Network&#43;</h5>
+                                <div class="card-text secondary-font">
+                                    Networking Concepts and Operations
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                
+                
+                <div class="col-lg-4 col-md-6 my-3">
+                    <a class="card my-3 h-100 p-3" href="https://www.credly.com/users/reece-niemuth" title="CompTIA A&#43;" target="_blank">
+                        <div class="card-body bg-transparent d-flex align-items-start">
+                            
+                            <div class="me-3 flex-shrink-0">
+                                <img src="/images/certs/comptia.png" alt="CompTIA A&#43;" style="width: 40px; height: 40px; object-fit: contain;">
+                            </div>
+                            
+                            <div class="flex-grow-1">
+                                <h5 class="card-title bg-transparent mb-1">CompTIA A&#43;</h5>
+                                <div class="card-text secondary-font">
+                                    IT Fundamentals &amp; Technical Support
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                
+                
+                <div class="col-lg-4 col-md-6 my-3">
+                    <a class="card my-3 h-100 p-3" href="https://www.credly.com/users/reece-niemuth" title="CompTIA Project&#43;" target="_blank">
+                        <div class="card-body bg-transparent d-flex align-items-start">
+                            
+                            <div class="me-3 flex-shrink-0">
+                                <img src="/images/certs/comptia.png" alt="CompTIA Project&#43;" style="width: 40px; height: 40px; object-fit: contain;">
+                            </div>
+                            
+                            <div class="flex-grow-1">
+                                <h5 class="card-title bg-transparent mb-1">CompTIA Project&#43;</h5>
+                                <div class="card-text secondary-font">
+                                    IT Project Management Certification
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                
+                
+                <div class="col-lg-4 col-md-6 my-3">
+                    <a class="card my-3 h-100 p-3" href="https://www.credly.com/users/reece-niemuth" title="ITIL 4 Foundation" target="_blank">
+                        <div class="card-body bg-transparent d-flex align-items-start">
+                            
+                            <div class="me-3 flex-shrink-0">
+                                <img src="/images/certs/axelos.png" alt="ITIL 4 Foundation" style="width: 40px; height: 40px; object-fit: contain;">
+                            </div>
+                            
+                            <div class="flex-grow-1">
+                                <h5 class="card-title bg-transparent mb-1">ITIL 4 Foundation</h5>
+                                <div class="card-text secondary-font">
+                                    IT Infrastructure Library v4 - AXELOS
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                
+                
+                <div class="col-lg-4 col-md-6 my-3">
+                    <a class="card my-3 h-100 p-3" href="https://www.credly.com/users/reece-niemuth" title="Genesys Cloud Professional" target="_blank">
+                        <div class="card-body bg-transparent d-flex align-items-start">
+                            
+                            <div class="me-3 flex-shrink-0">
+                                <img src="/images/certs/genesys.png" alt="Genesys Cloud Professional" style="width: 40px; height: 40px; object-fit: contain;">
+                            </div>
+                            
+                            <div class="flex-grow-1">
+                                <h5 class="card-title bg-transparent mb-1">Genesys Cloud Professional</h5>
+                                <div class="card-text secondary-font">
+                                    Genesys Cloud CX Platform Certification
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                
+                
+                <div class="col-lg-4 col-md-6 my-3">
+                    <a class="card my-3 h-100 p-3" href="https://www.credly.com/users/reece-niemuth" title="Linux Essentials" target="_blank">
+                        <div class="card-body bg-transparent d-flex align-items-start">
+                            
+                            <div class="me-3 flex-shrink-0">
+                                <img src="/images/certs/lpi.png" alt="Linux Essentials" style="width: 40px; height: 40px; object-fit: contain;">
+                            </div>
+                            
+                            <div class="flex-grow-1">
+                                <h5 class="card-title bg-transparent mb-1">Linux Essentials</h5>
+                                <div class="card-text secondary-font">
+                                    Linux Fundamentals - LPI
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="contact" class="py-5">
+    <div class="container">
+        <h3 class="text-center">Get In Touch</h3>
+        <div class="px-0 px-md-5 px-lg-5">
+            <div class="row justify-content-center px-md-5">
+                <div class="col-md-8 py-3">
+                    <div class="text-center">
+                        Feel free to reach out! Whether you have a question about cybersecurity, want to collaborate on a project, or just want to connect.
+                    </div>
+                    
+                    <div class="text-center pt-3">
+                        <a 
+                            href='
+                                    mailto:reeceniemuth@gmail.com
+                                  '
+                            target="_blank"
+                            class="btn"
+                        >
+                            Email Me
+                        </a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contact-form-status"></div>
+</section>
+
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="check-circle-fill" viewBox="0 0 16 16">
+    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+  </symbol>
+  <symbol id="info-fill" viewBox="0 0 16 16">
+    <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+  </symbol>
+  <symbol id="exclamation-triangle-fill" viewBox="0 0 16 16">
+    <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+  </symbol>
+</svg>
+
+  </div><footer>
+    
+ 
+
+<div class="text-center pt-2">
+    
+    <span class="px-1">
+        <a href="https://github.com/ReeceNiemuth" target="_blank" aria-label="github">
+            <svg xmlns="http://www.w3.org/2000/svg" width="2.7em" height="2.7em" viewBox="0 0 1792 1792">
+                <path id="footer-socialNetworks-github-svg-path"
+                    d="M522 1352q-8 9-20-3-13-11-4-19 8-9 20 3 12 11 4 19zm-42-61q9 12 0 19-8 6-17-7t0-18q9-7 17 6zm-61-60q-5 7-13 2-10-5-7-12 3-5 13-2 10 5 7 12zm31 34q-6 7-16-3-9-11-2-16 6-6 16 3 9 11 2 16zm129 112q-4 12-19 6-17-4-13-15t19-7q16 5 13 16zm63 5q0 11-16 11-17 2-17-11 0-11 16-11 17-2 17 11zm58-10q2 10-14 14t-18-8 14-15q16-2 18 9zm964-956v960q0 119-84.5 203.5t-203.5 84.5h-224q-16 0-24.5-1t-19.5-5-16-14.5-5-27.5v-239q0-97-52-142 57-6 102.5-18t94-39 81-66.5 53-105 20.5-150.5q0-121-79-206 37-91-8-204-28-9-81 11t-92 44l-38 24q-93-26-192-26t-192 26q-16-11-42.5-27t-83.5-38.5-86-13.5q-44 113-7 204-79 85-79 206 0 85 20.5 150t52.5 105 80.5 67 94 39 102.5 18q-40 36-49 103-21 10-45 15t-57 5-65.5-21.5-55.5-62.5q-19-32-48.5-52t-49.5-24l-20-3q-21 0-29 4.5t-5 11.5 9 14 13 12l7 5q22 10 43.5 38t31.5 51l10 23q13 38 44 61.5t67 30 69.5 7 55.5-3.5l23-4q0 38 .5 103t.5 68q0 22-11 33.5t-22 13-33 1.5h-224q-119 0-203.5-84.5t-84.5-203.5v-960q0-119 84.5-203.5t203.5-84.5h960q119 0 203.5 84.5t84.5 203.5z" />
+
+                <metadata>
+                    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                        xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+                        <rdf:Description about="https://iconscout.com/legal#licenses"
+                            dc:title="Github, Online, Project, Hosting, Square"
+                            dc:description="Github, Online, Project, Hosting, Square" dc:publisher="Iconscout"
+                            dc:date="2016-12-14" dc:format="image/svg+xml" dc:language="en">
+                            <dc:creator>
+                                <rdf:Bag>
+                                    <rdf:li>Font Awesome</rdf:li>
+                                </rdf:Bag>
+                            </dc:creator>
+                        </rdf:Description>
+                    </rdf:RDF>
+                </metadata>
+            </svg>
+        </a>
+    </span>
+    
+
+    
+    <span class="px-1">
+        <a href="https://www.linkedin.com/in/reece-niemuth-mba-cissp-ccsp-54a87419a/" target="_blank" aria-label="linkedin">
+            <svg xmlns="http://www.w3.org/2000/svg" width='2.4em' height='2.4em' fill="#fff" aria-label="LinkedIn"
+                viewBox="0 0 512 512">
+                <rect width="512" height="512" fill="#0077b5" rx="15%" />
+                <circle cx="142" cy="138" r="37" />
+                <path stroke="#fff" stroke-width="66" d="M244 194v198M142 194v198" />
+                <path d="M276 282c0-20 13-40 36-40 24 0 33 18 33 45v105h66V279c0-61-32-89-76-89-34 0-51 19-59 32" />
+            </svg>
+        </a>
+    </span>
+    
+
+    
+
+    
+
+    
+</div><div class="container py-4">
+    <div class="row justify-content-center">
+        <div class="col-md-4 text-center">
+            
+                <div class="pb-2">
+                    <a href="http://localhost:1313/" title="Reece Niemuth">
+                        <img alt="Footer logo" src="/favicon.ico"
+                            height="40px" width="40px">
+                    </a>
+                </div>
+            
+            &copy; 2026  All rights reserved
+        </div>
+    </div>
+</div>
+</footer><script src="/bootstrap-5/js/bootstrap.bundle.min.js"></script>
+<script>
+    if (document.body.className.includes("light")) {
+        document.documentElement.classList.add('dark');
+        document.body.classList.add('dark');
+        localStorage.setItem("pref-theme", 'dark');
+    }
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            document.documentElement.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            document.documentElement.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+  <section id="search-content" class="py-2">
+    <div class="container" id="search-results"></div>
+  </section>
+</body>
+
+</html>
