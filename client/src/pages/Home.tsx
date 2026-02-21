@@ -74,8 +74,11 @@ export default function Home() {
       <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-sm border-b border-border">
         <div className="container mx-auto">
           <div className="flex items-center justify-between h-16">
-            <a href="#" className="section-tag transition-kinetic hover:text-primary">
-              RN
+            <a href="#" className="flex items-center gap-2.5 group transition-kinetic">
+              <div className="w-8 h-8 bg-primary/15 border border-primary/40 rounded flex items-center justify-center group-hover:bg-primary/25 group-hover:border-primary/70 transition-kinetic">
+                <span className="text-primary font-bold text-xs tracking-wider">RN</span>
+              </div>
+              <span className="text-sm font-semibold tracking-wide text-foreground/80 group-hover:text-foreground transition-kinetic hidden sm:block">Reece Niemuth</span>
             </a>
             <div className="hidden md:flex items-center gap-8">
               <a href="#about" className="text-sm transition-kinetic hover:text-primary">About</a>
@@ -196,7 +199,6 @@ export default function Home() {
         <div className="container">
           <div className="grid md:grid-cols-12 gap-12">
             <div className="md:col-span-5">
-              <div className="section-tag mb-4">ABOUT</div>
               <h2 className="text-4xl md:text-5xl font-bold mb-6">About Me</h2>
             </div>
             <div className="md:col-span-7 space-y-6 text-muted-foreground">
@@ -234,7 +236,7 @@ export default function Home() {
                     "RMF", "NIST 800-53", "JSIG", "STIG",
                     "AWS Security", "Python", "PowerShell", "Bash",
                     "Splunk", "Nessus", "SCAP", "OpenSCAP",
-                    "Linux", "Automation"
+                    "Linux", "Automation", "AI/ML"
                   ].map((skill) => (
                     <div 
                       key={skill}
@@ -256,7 +258,6 @@ export default function Home() {
       {/* Professional Experience Section */}
       <section id="experience" className="py-24 fade-on-scroll">
         <div className="container">
-          <div className="section-tag mb-4">EXPERIENCE</div>
           <h2 className="text-4xl md:text-5xl font-bold mb-12">Professional Experience</h2>
           
           <Tabs defaultValue="lockheed" className="w-full">
@@ -454,7 +455,6 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-to-b from-background via-background to-card/20"></div>
         
         <div className="container relative z-10">
-          <div className="section-tag mb-4">EDUCATION</div>
           <h2 className="text-4xl md:text-5xl font-bold mb-12">Education</h2>
           
           <div className="space-y-6">
@@ -550,7 +550,6 @@ export default function Home() {
       {/* Cyber Portfolio Section with GitHub Repos */}
       <section id="projects" className="py-24 fade-on-scroll">
         <div className="container">
-          <div className="section-tag mb-4">PORTFOLIO</div>
           <h2 className="text-4xl md:text-5xl font-bold mb-12">Cyber Engineering Portfolio</h2>
           
           {/* Featured Portfolio Card */}
@@ -575,11 +574,8 @@ export default function Home() {
                 
                 <div className="space-y-4">
                   <div>
-                    <h3 className="text-3xl md:text-4xl font-bold mb-2 group-hover:text-primary transition-kinetic">
-                      Cyber Engineering Portfolio
-                    </h3>
                     <p className="text-muted-foreground text-lg">
-                      Comprehensive collection of cybersecurity projects, tools, and documentation showcasing hands-on security engineering, 
+                      Comprehensive collection of cybersecurity projects, tools, and documentation showcasing hands-on security engineering,
                       compliance automation, and infrastructure hardening across RMF, NIST, and federal standards.
                     </p>
                   </div>
@@ -653,7 +649,6 @@ export default function Home() {
       {/* Skills & Tools Expertise Section */}
       <section id="skills" className="py-24 fade-on-scroll">
         <div className="container">
-          <div className="section-tag mb-4">SKILLS</div>
           <h2 className="text-4xl md:text-5xl font-bold mb-12">Skills & Tools Expertise</h2>
           
           <div className="space-y-12">
@@ -740,7 +735,6 @@ export default function Home() {
       {/* Certifications Section */}
       <section id="certifications" className="py-24 fade-on-scroll">
         <div className="container">
-          <div className="section-tag mb-4">CERTIFICATIONS</div>
           <h2 className="text-4xl md:text-5xl font-bold mb-12">Certifications</h2>
           
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -758,7 +752,8 @@ export default function Home() {
               { name: "CompTIA Project+", full: "IT Project Management Certification", org: "CompTIA" },
               { name: "ITIL 4 Foundation", full: "IT Infrastructure Library v4", org: "AXELOS" },
               { name: "Genesys Cloud Professional", full: "Genesys Cloud CX Platform Certification", org: "Genesys" },
-              { name: "Linux Essentials", full: "Linux Fundamentals", org: "LPI" }
+              { name: "Linux Essentials", full: "Linux Fundamentals", org: "LPI" },
+              { name: "Splunk Core Certified Power User", full: "Splunk Core Certified Power User", org: "Splunk" }
             ].map((cert) => (
               <Card 
                 key={cert.name}
@@ -787,7 +782,6 @@ export default function Home() {
         
         <div className="container relative z-10">
           <div className="max-w-2xl mx-auto text-center">
-            <div className="section-tag mb-4">CONTACT</div>
             <h2 className="text-4xl md:text-5xl font-bold mb-6">Get In Touch</h2>
             <p className="text-lg text-muted-foreground mb-12">
               Feel free to reach out! Whether you have a question about cybersecurity, want to collaborate on a project, 
