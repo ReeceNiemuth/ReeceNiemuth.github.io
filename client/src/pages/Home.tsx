@@ -74,11 +74,9 @@ export default function Home() {
       <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-sm border-b border-border">
         <div className="container mx-auto">
           <div className="flex items-center justify-between h-16">
-            <a href="#" className="flex items-center gap-2.5 group transition-kinetic">
-              <div className="w-8 h-8 bg-primary/15 border border-primary/40 rounded flex items-center justify-center group-hover:bg-primary/25 group-hover:border-primary/70 transition-kinetic">
-                <span className="text-primary font-bold text-xs tracking-wider">RN</span>
-              </div>
-              <span className="text-sm font-semibold tracking-wide text-foreground/80 group-hover:text-foreground transition-kinetic hidden sm:block">Reece Niemuth</span>
+            <a href="#" className="text-lg font-bold transition-kinetic hover:text-primary flex items-center gap-2">
+              <div className="w-6 h-6 bg-primary rounded-sm"></div>
+              <span className="hidden sm:inline">Reece</span>
             </a>
             <div className="hidden md:flex items-center gap-8">
               <a href="#about" className="text-sm transition-kinetic hover:text-primary">About</a>
@@ -199,6 +197,7 @@ export default function Home() {
         <div className="container">
           <div className="grid md:grid-cols-12 gap-12">
             <div className="md:col-span-5">
+              <div className="mb-4"></div>
               <h2 className="text-4xl md:text-5xl font-bold mb-6">About Me</h2>
             </div>
             <div className="md:col-span-7 space-y-6 text-muted-foreground">
@@ -258,6 +257,7 @@ export default function Home() {
       {/* Professional Experience Section */}
       <section id="experience" className="py-24 fade-on-scroll">
         <div className="container">
+          <div className="mb-4"></div>
           <h2 className="text-4xl md:text-5xl font-bold mb-12">Professional Experience</h2>
           
           <Tabs defaultValue="lockheed" className="w-full">
@@ -455,6 +455,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-to-b from-background via-background to-card/20"></div>
         
         <div className="container relative z-10">
+          <div className="mb-4"></div>
           <h2 className="text-4xl md:text-5xl font-bold mb-12">Education</h2>
           
           <div className="space-y-6">
@@ -550,6 +551,7 @@ export default function Home() {
       {/* Cyber Portfolio Section with GitHub Repos */}
       <section id="projects" className="py-24 fade-on-scroll">
         <div className="container">
+          <div className="mb-4"></div>
           <h2 className="text-4xl md:text-5xl font-bold mb-12">Cyber Engineering Portfolio</h2>
           
           {/* Featured Portfolio Card */}
@@ -649,6 +651,7 @@ export default function Home() {
       {/* Skills & Tools Expertise Section */}
       <section id="skills" className="py-24 fade-on-scroll">
         <div className="container">
+          <div className="mb-4"></div>
           <h2 className="text-4xl md:text-5xl font-bold mb-12">Skills & Tools Expertise</h2>
           
           <div className="space-y-12">
@@ -735,6 +738,7 @@ export default function Home() {
       {/* Certifications Section */}
       <section id="certifications" className="py-24 fade-on-scroll">
         <div className="container">
+          <div className="mb-4"></div>
           <h2 className="text-4xl md:text-5xl font-bold mb-12">Certifications</h2>
           
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -782,6 +786,7 @@ export default function Home() {
         
         <div className="container relative z-10">
           <div className="max-w-2xl mx-auto text-center">
+            <div className="mb-4"></div>
             <h2 className="text-4xl md:text-5xl font-bold mb-6">Get In Touch</h2>
             <p className="text-lg text-muted-foreground mb-12">
               Feel free to reach out! Whether you have a question about cybersecurity, want to collaborate on a project, 
